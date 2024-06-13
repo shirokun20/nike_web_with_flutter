@@ -22,32 +22,30 @@ class _HalamanUtamaState extends State<HalamanUtama> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(
+            SizedBox(
               height: 50,
             ),
-            Expanded(
-              child: Container(
-                width: double.infinity,
-                height: double.infinity,
-                decoration: BoxDecoration(
-                  color: const Color.fromRGBO(242, 242, 242, 1),
-                  borderRadius: BorderRadius.circular(55),
-                  border: Border.all(
-                    width: 5,
-                    color: Colors.white,
-                  ),
-                ),
-                child: Stack(
-                  clipBehavior: Clip.none,
-                  children: [
-                    _layerJDT(),
-                    _layerContent(),
-                    _layerShoe(),
-                  ],
+            Container(
+              width: 1440,
+              height: 840,
+              decoration: BoxDecoration(
+                color: const Color.fromRGBO(242, 242, 242, 1),
+                borderRadius: BorderRadius.circular(55),
+                border: Border.all(
+                  width: 5,
+                  color: Colors.white,
                 ),
               ),
+              child: Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  _layerJDT(),
+                  _layerContent(),
+                  _layerShoe(),
+                ],
+              ),
             ),
-            const SizedBox(
+            SizedBox(
               height: 50,
             ),
           ],
