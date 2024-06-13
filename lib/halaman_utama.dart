@@ -27,7 +27,7 @@ class _HalamanUtamaState extends State<HalamanUtama> {
             ),
             Container(
               width: 1440,
-              height: 840,
+              height: 850,
               decoration: BoxDecoration(
                 color: const Color.fromRGBO(242, 242, 242, 1),
                 borderRadius: BorderRadius.circular(55),
@@ -45,9 +45,7 @@ class _HalamanUtamaState extends State<HalamanUtama> {
                 ],
               ),
             ),
-            SizedBox(
-              height: 50,
-            ),
+            Spacer(),
           ],
         ),
       ),
